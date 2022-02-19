@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips Calculator</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="main">
+        <h1 class="header">Tip Calculator</h1>
+        <div class="center">
+            <div class="center_item">
+                <span class="subheader">Bill Amount</span>
+                <div class="center_input">
+                    <div class="icon"><ion-icon name="cash-outline"></ion-icon></div>
+                    <input type="number" class="input_bill">
+                </div>
+            </div>
+            <div class="center_item">
+                <span class="subheader">Number of Guests</span>
+                <div class="center_input">
+                    <div class="icon"><ion-icon name="accessibility-outline"></ion-icon></div>
+                    <input type="number" class="input_person">                    
+                </div>
+            </div>
+            <div class="service">
+                <span class="subheader">Service Quality</span>
+                <select name="choose_quality" class="quality">
+                    <option disabled selected value="">Choose...</option>
+                    <option value="0.3">30% - Excellent</option>
+                    <option value="0.2">20% - Good</option>
+                    <option value="0.15">15% - It was ok</option>
+                    <option value="0.1">10% - Bad</option>
+                    <option value="0.05">5% - Terrible</option>
+                </select>
+            </div>
+        </div>
+        <button class="calc">Calculate</button>
+        <div class="total">
+        
+        </div>
+    </div>
+
+    <script src="./js/tipsCalc.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

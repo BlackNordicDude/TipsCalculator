@@ -1,0 +1,82 @@
+* 
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-size: 15px
+body
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    background: linear-gradient(90deg, #ebce2f, #d80a0a)
+.main
+    width: 300px
+    height: 250px
+    padding: 10px
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: stretch
+    background: #f0ebce
+    border-radius: 10px
+    box-shadow: 1px 1px 5px black
+.header
+    font-size: 1.5em
+    text-align: center
+.center
+    padding-top: 10px
+    padding-bottom: 10px
+    border-top: 1px solid #70707031
+    border-bottom: 1px solid #70707031
+    &_input
+        display: flex
+        .icon
+            width: 20px
+            height: 20px
+            border: 1px solid #9e9159a1
+            border-radius: 3px
+            display: flex
+            align-items: center
+            justify-content: center
+            background: #f0ebce
+            &:hover
+                background: #a8a592
+        input
+            height: 20px
+            width: 260px
+            font-size: 0.6em
+            padding: 4px
+            border: 1px solid #9e9159a1
+            border-radius: 3px
+    &_item
+        margin-bottom: 15px
+.quality
+    width: 100%
+    height: 20px
+    font-size: 0.6em
+    border: 1px solid #9e9159a1
+    border-radius: 3px
+    option
+        font-size: 1em
+.calc
+    margin: 0 auto
+    width: 20%
+    font-size: 0.6em
+.total
+    width: 90px
+    height: 40px
+    position: absolute
+    top: 110%
+    left: 50%
+    transform: translateX(-50%)
+    transition: 0.5s
+    opacity: 0
+    background: #e99922
+    border: 1px solid #d32a14
+    text-align: center
+    font-size: 12px
+    padding: 8px
+.show
+    transition: 0.5s
+    opacity: 1
